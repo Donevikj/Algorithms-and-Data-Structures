@@ -1,3 +1,12 @@
+//You are given a single linked list with integer nodes. Additionally, you are given one more integer M (M>1). You need to delete every M-th element from the list.
+//
+//        Input: In the first line from the input the number of elements in the list is given, and then in the next line the elements themselves. In the last line, the integer M is given.
+//
+//        Output: The transformed list (with every M-th element deleted) should be printed at the output.
+//
+//         All the needed code for the structure that you need to use is given. The test class SpecialSLLDelete.java is also given, with completely implemented input and output. You only need to change the code of the void specialDelete(SLL<Integer> list, int m) method.
+//         You must not change the main method
+
 package Lab3.Task1;
 
 import java.util.Scanner;

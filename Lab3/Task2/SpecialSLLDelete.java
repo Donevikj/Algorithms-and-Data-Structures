@@ -1,3 +1,19 @@
+//In a mystical card game, each card embodies a creature with a specific type (int type), a health value (int health), and a magic power value (int magicPower). The significance of a card is determined by the product of its health and magic power values.
+//
+//
+//        Two sorcerers decide to challenge each other in a duel, each with their own deck of cards. The decks are represented as two single linked lists. In the first list, we keep the cards of the first sorcerer, and in the second list, we keep the cards of the second sorcerer. Initially, both sorcerers have exactly 8 cards each.
+//
+//        At the very beginning of the duel, the rules require that the first sorcerer gives their best card to the other sorcerer, so that the second sorcerer takes that card and has to put it in the middle of their deck of cards. This means that we need to remove (delete) the best card from the list that keeps the cards of the first sorcerer and to add that card in the middle of the list that keeps the cards of the second sorcerer.
+//
+//        Input: In each row of input we have the data for one card, separated with space, in the format type health magicPower. First we have the cards of the first sorcerer, and after that follow the cards for the second sorcerer.
+//
+//        Output: In the first row the type of all the cards of the first friend. In the second row the type of all the cards of the second friend.
+//
+//        Pay attention:
+//
+//        1. All the needed code for the structure that you need to use is given. The test class MysticalCardGame.java is also given, with completely implemented input and output. You only need to change the code of the void startDuel(SLL<Card> firstSorcererCards, SLL<Card> secondSorcererCards) method.
+
+
 package Lab3.Task2;
 
 import java.util.Scanner;
