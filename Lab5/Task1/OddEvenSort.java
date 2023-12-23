@@ -4,7 +4,7 @@
 //
 //        Class Name: OddEvenSort
 
-package Lab1.Task1;
+package Lab5.Task1;
 
 import java.io.BufferedReader;
 import java.io.IOException;
