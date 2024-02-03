@@ -222,41 +222,41 @@ public class DLLBattalion {
     //TODO: implement function
     public static void battalion(DLL<Integer> list, int a, int b) {
 
-        DLLNode<Integer> pocetenPodlista = list.getFirst();
-        DLLNode<Integer> kraenPodlista = list.getFirst();
-        DLLNode<Integer> pom = null;
-        int brojac = 0;
+        DLLNode<Integer> sublistFirst = list.getFirst();
+        DLLNode<Integer> sublistLast = list.getFirst();
+        DLLNode<Integer> tmp = null;
+        int counter = 0;
 
-        while (pocetenPodlista != null){
-            if(pocetenPodlista.element.equals(a)){
+        while (sublistFirst != null){
+            if(sublistFirst.element.equals(a)){
                 break;
             }
-            pocetenPodlista = pocetenPodlista.succ;
+            sublistFirst = sublistFirst.succ;
         }
 
-        kraenPodlista = pocetenPodlista;
+        sublistLast = sublistFirst;
 
-        while (kraenPodlista !=null){
-            if(kraenPodlista.element.equals(b)){
+        while (sublistLast !=null){
+            if(sublistLast.element.equals(b)){
                 break;
             }
-            kraenPodlista=kraenPodlista.succ;
+            sublistLast = sublistLast.succ;
         }
-        pom = pocetenPodlista;
+        tmp = sublistFirst;
 
-        while (pom != kraenPodlista) {
-            if(pom.succ == null ){
-                brojac++;
+        while (tmp != sublistLast) {
+            if(tmp.succ == null ){
+                counter++;
                 break;
             }
-            brojac++;
-            pom = pom.succ;
+            counter++;
+            tmp = tmp.succ;
         }
 
-        for( int i = 0; i<brojac;i++){
-            list.insertBefore(kraenPodlista.element, pocetenPodlista);
-            list.delete(kraenPodlista);
-            kraenPodlista = kraenPodlista.pred;
+        for(int i = 0; i< counter; i++){
+            list.insertBefore(sublistLast.element, sublistFirst);
+            list.delete(sublistLast);
+            sublistLast = sublistLast.pred;
         }
 
 
